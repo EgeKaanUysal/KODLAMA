@@ -2,6 +2,7 @@ import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.util.Scanner;
 public class MainEncryption {
+    
 static Scanner scanner = new Scanner(System.in);
 static ConvertChart convertChart = new ConvertChart();
 static Chatgptdeneme rsaencryption;
