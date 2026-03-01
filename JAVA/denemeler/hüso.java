@@ -1,9 +1,10 @@
+
 package denemeler;
 
 import java.math.BigInteger;
 import java.util.Random;
 import java.util.Scanner;
-
+@SuppressWarnings("all")
 
 public class hüso {
     
