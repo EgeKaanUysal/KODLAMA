@@ -36,10 +36,10 @@ public class BenimDenemem {
      System.out.println();
      System.out.println(asılbaba);
      if (carpim.equals(asılbaba)){
-        System.out.println("eşit");
+        // System.out.println("eşit");
      }
      else{
-        System.out.println("eşit değil");
+        // System.out.println("eşit değil");
      }
      asalMi();
     }

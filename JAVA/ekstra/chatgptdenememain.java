@@ -55,6 +55,7 @@ class randomprime{
             
             if (candidate.isProbablePrime(40)) {
                 System.out.println("asal sayı :" + candidate);
+                System.out.println();
                 return candidate;
             }
             // denemeye devam
@@ -116,16 +117,16 @@ class chatgptdeneme {
     private void calculateE() {
         BigInteger one = BigInteger.ONE;
         BigInteger two = BigInteger.valueOf(2);
-        int count =0;
+        
         for (BigInteger candidate = BigInteger.valueOf(3);
              candidate.compareTo(phi) < 0  ;
              candidate = candidate.add(two)) {
             if (candidate.gcd(phi).equals(one)){
-                count++;
-            }
-            if (candidate.gcd(phi).equals(one)& count==4) {
+                
+            
                 e = candidate;
                 System.out.println("e nin değeri : " + e);
+                System.out.println();
                 return;
             }
         }
@@ -137,6 +138,7 @@ class chatgptdeneme {
     private void calculateD() {
         d = e.modInverse(phi);
         System.out.println("d nin değeri : " + d);
+        System.out.println();
     }
 
     // Şifreleme: m^e mod n
