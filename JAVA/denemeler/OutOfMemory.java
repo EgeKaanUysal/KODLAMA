@@ -15,11 +15,11 @@ public class OutOfMemory {
     static void Islem(){
         System.out.println("------------");
         ArrayList<OutOfMemory> list = new ArrayList<>();
-             for (long i=0; i<105000000; i++){
+             for (long i=0; i<100000000L; i++){
                              
                 OutOfMemory referans= new OutOfMemory();
                 list.add(referans);
-                if (i%1000000==0){
+                if (i%10000000==0){
                     System.out.println(i);
                 }
     }

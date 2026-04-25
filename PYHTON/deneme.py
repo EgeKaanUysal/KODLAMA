@@ -1,16 +1,11 @@
-# 
-# import sys
-# x=1
-# y=2
 
+# Kullanıcıdan string girişi al
+giriş = input("Bir string girin: ")
 
-# sys.set_int_max_str_digits(0)   # limiti kaldırır (veya örn: 100000)
+# Her karakter için sayıya çevir (ASCII değerleri)
+sayılar = [ord(char) for char in giriş]
+print(f"Her karakterin sayısı: {sayılar}")
 
-# for i in range(1,10100):
-#     x=x*i
-#     print(x)
-list =[2, 2, 2, 2, 2, 2, 2, 19259, 303907, 42346333, 383337523]
-a=1
-for i in list:
-    a=i*a
-    print(a) 
+# Sayıları byte'lara çevir
+byte_verisi = bytes(sayılar)
+
